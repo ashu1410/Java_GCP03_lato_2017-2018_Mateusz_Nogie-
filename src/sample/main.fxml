@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+            <children>
+                <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="652.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Program">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#closeProgram" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="About">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+
+            <fx:include fx:id="tabs" source="tabs.fxml" />
+
+        <Button  layoutX="7.0" layoutY="514.0" mnemonicParsing="false" onAction="#addStudent" text="Add Student" />
+        <Button layoutX="101.0" layoutY="514.0" mnemonicParsing="false" onAction="#removeStudent" text="Remove Student" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+    <children>
+        <SplitMenuButton contentDisplay="TOP" layoutX="421.0" layoutY="119.0" mnemonicParsing="false" popupSide="TOP" text="Opcje" AnchorPane.topAnchor="60.0">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#doSave" text="Zapisz" />
+                <MenuItem mnemonicParsing="false" onAction="#doClear" text="Wyczyść" />
+                <MenuItem mnemonicParsing="false" onAction="#doCancel" text="Anuluj" />
+            </items>
+        </SplitMenuButton>
+        <PasswordField fx:id="fPassword" layoutX="226.0" layoutY="71.0" promptText="Hasło" AnchorPane.topAnchor="20.0" />
+        <TextField fx:id="fName" layoutX="34.0" layoutY="71.0" promptText="Nazwa" AnchorPane.topAnchor="20.0" />
+        <TextField fx:id="fGender" layoutX="34.0" layoutY="119.0" promptText="Płeć" AnchorPane.topAnchor="60.0" />
+        <TextField fx:id="fAge" layoutX="421.0" layoutY="71.0" promptText="Wiek" AnchorPane.topAnchor="20.0" />
+        <TextField fx:id="fAddress" layoutX="226.0" layoutY="119.0" promptText="Adres" AnchorPane.bottomAnchor="15.0" AnchorPane.topAnchor="60.0" />
+    </children>
+</AnchorPane>

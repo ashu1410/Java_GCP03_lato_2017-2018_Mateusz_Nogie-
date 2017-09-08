@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane layoutX="3.0" layoutY="26.0" prefHeight="241.0" prefWidth="653.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TablesController">
+    <tabs>
+        <Tab text="Students">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="653.0">
+                    <children>
+                        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="636.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="gradeColumn" prefWidth="132.0" text="Grade" />
+                                <TableColumn fx:id="nameColumn" prefWidth="161.0" text="Name" />
+                                <TableColumn fx:id="surnameColumn" prefWidth="168.0" text="Surname" />
+                                <TableColumn fx:id="ageColumn" prefWidth="197.0" text="Age" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Log">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ListView fx:id="logger" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Histogram">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <BarChart fx:id="barChart" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <xAxis>
+                                <CategoryAxis fx:id="catAxis" label="Grades" prefHeight="47.0" prefWidth="578.0" side="BOTTOM" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis fx:id="numAxis" label="COUNT" side="LEFT" tickLabelFill="#f50000" tickLabelGap="2.0" >
+                                </NumberAxis>
+                            </yAxis>
+                        </BarChart>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
